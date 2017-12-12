@@ -15,6 +15,6 @@ func (p *CarProviderMock) SaveCar(car models.Car) error {
 
 // GetCar implements the the provider using hlf
 func (p *CarProviderMock) GetCar(id int64) (models.Car, error) {
-	car := createCar()
+	car := CreateCar()
 	return car, nil
 }

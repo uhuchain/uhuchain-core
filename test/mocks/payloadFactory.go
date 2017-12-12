@@ -4,7 +4,7 @@ import (
 	"github.com/uhuchain/uhuchain-core/models"
 )
 
-func createCarPayload() string {
+func CreateCarPayload() string {
 	return `{
 		"brand": "Volkswagen",
 		"id": 12345,
@@ -29,8 +29,8 @@ func createCarPayload() string {
 	}`
 }
 
-func createCar() models.Car {
+func CreateCar() models.Car {
 	car := models.Car{}
-	car.UnmarshalBinary([]byte(createCarPayload()))
+	car.UnmarshalBinary([]byte(CreateCarPayload()))
 	return car
 }
